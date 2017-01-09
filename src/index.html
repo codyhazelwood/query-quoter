@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Query Quoter</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles/app.css" />
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">"Query Quoter\n"+</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <h4>Without Quotes:</h4>
+                <textarea id="textWithoutQuotes" class="form-control" rows="25"></textarea>
+            </div>
+
+            <div class="col-md-2 selectors text-center">
+                <h5>Quotes</h5>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="quoteRadios" id="singleQuote" value="option1" checked>
+                        Single - '
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="quoteRadios" id="doubleQuote" value="option2">
+                        Double - "
+                    </label>
+                </div>
+
+                <br />
+
+                <h5>Padding</h5>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="paddingRadios" id="spacePadding" value="option1" checked>
+                        Space - ' '
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="paddingRadios" id="newlinePadding" value="option2">
+                        Newline - '\n'
+                    </label>
+                </div>
+
+                <br />
+
+                <button id="quote" class="btn btn-primary btn-block">-&gt;</button>
+                <button id="dequote" class="btn btn-primary btn-block">&lt;-</button>
+            </div>
+
+            <div class="col-md-5">
+                <h4>With Quotes:</h4>
+                <textarea id="textWithQuotes" class="form-control" rows="25"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="styles/app.js"></script>
+</body>
+</html>
