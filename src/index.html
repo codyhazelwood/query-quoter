@@ -14,7 +14,7 @@
     </nav>
 
     <div class="container">
-        <div class="row">
+        <div class="row container-height">
             <div class="col-md-5">
                 <h4>Without Quotes:</h4>
                 <textarea id="textWithoutQuotes" class="form-control" rows="25"></textarea>
@@ -24,13 +24,13 @@
                 <h5>Quotes</h5>
                 <div class="radio">
                     <label>
-                        <input type="radio" name="quoteRadios" id="singleQuote" value="option1" checked>
+                        <input type="radio" name="quoteRadios" id="singleQuote" value="'" checked>
                         Single - '
                     </label>
                 </div>
                 <div class="radio">
                     <label>
-                        <input type="radio" name="quoteRadios" id="doubleQuote" value="option2">
+                        <input type="radio" name="quoteRadios" id="doubleQuote" value="&quot;">
                         Double - "
                     </label>
                 </div>
@@ -40,14 +40,30 @@
                 <h5>Padding</h5>
                 <div class="radio">
                     <label>
-                        <input type="radio" name="paddingRadios" id="spacePadding" value="option1" checked>
+                        <input type="radio" name="paddingRadios" id="spacePadding" value=" " checked>
                         Space - ' '
                     </label>
                 </div>
                 <div class="radio">
                     <label>
-                        <input type="radio" name="paddingRadios" id="newlinePadding" value="option2">
+                        <input type="radio" name="paddingRadios" id="newlinePadding" value="\n">
                         Newline - '\n'
+                    </label>
+                </div>
+
+                <br />
+
+                <h5>Concat</h5>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="concatRadios" id="leadingConcat" value="true" checked>
+                        Leading - + '....'
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="concatRadios" id="trailingConcat" value="false">
+                        Trailing - '....' +
                     </label>
                 </div>
 
@@ -66,6 +82,6 @@
 
     <script src="https://code.jquery.com/jquery-3.1.1.js" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="styles/app.js"></script>
+    <script src="scripts/app.js"></script>
 </body>
 </html>
