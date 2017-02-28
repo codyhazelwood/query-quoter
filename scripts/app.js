@@ -32,7 +32,7 @@ $(document).ready(function () {
 
     function dequote(text) {
         return text
-            .replace(/^(\+ ){0,1}["']/mg, '')
+            .replace(/^ *(\+ ){0,1}["']/mg, '')
             .replace(/(\\n| ){0,1}["']( \+){0,1}$/mg, '');
     }
 
